@@ -43,7 +43,7 @@ def select_client_aigris (conn):
     cur.execute(query)
     rows = cur.fetchall()
     
-    print("\nNote Bar :")
+    print("\nclent aigris :")
     for row in rows:
         print(f"{row[0]} {row[1]}")
 
@@ -53,29 +53,30 @@ def select_menteurs (conn):
     cur.execute(query)
     rows = cur.fetchall()
     
-    print("\nNote Bar :")
+    print("\nliste menteurs :")
     for row in rows:
         print(f"{row[0]} {row[1]}")
 
 def select_patron_sobre (conn):
     cur = conn.cursor()
-    query = "Select Personne.nomB, prenomB from Personne join Bar on patron =id EXCEPT Select nomB, prenomB from Personne join Avis on personne= id"
+    query = "Select Personne.nomB, prenomB from Personne join Bar on patron =Personne.id EXCEPT Select nomB, prenomB from Personne join Avis on personne= Personne.id"
     cur.execute(query)
     rows = cur.fetchall()
     
-    print("\nNote Bar :")
+    print("\npatrons sobres :")
     for row in rows:
         print(f"{row[0]} {row[1]}")
 
 def main():
     print("Création de la base...")
-    conn = create_connection("./create.SQL", "beeer.db")
+    conn = create_connection("create.SQL", "beeer.db")
     
     if conn:
         select_buveurs(conn)
         select_note_bar(conn)
         select_client_aigris(conn)
         select_menteurs(conn)
+        select_patron_sobre(conn)
         conn.close()
     else:
         print("Impossible de se connecter à la base de données.")
