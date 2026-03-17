@@ -70,34 +70,34 @@ CREATE TABLE avis(
 
 -- Insertion des données
 INSERT INTO Personne VALUES
-(1, 'Dupont', 'Jean', '12 rue de la Soif, Paris', '0601020304'),
-(2, 'Lefebvre', 'Marie', '5 avenue du Houblon, Lille', '0611223344'),
-(3, 'Durand', 'Lucas', '45 boulevard Tech, Lyon', '0788990011'),
-(4, 'Martin', 'Julie', '8 impasse du Code, Grenoble', '0655443322'),
-(5, 'Petit', 'Thomas', '22 rue Java, Bordeaux', '0699887766'),
-(6, 'Zuckerberg', 'Mark', '1 Infinite Loop, Palo Alto', '0600000000'),
-(7, 'Lovlace', 'Ada', '10 Algorithm Way, Londres', '0701020304');
+(1, 'Coic', 'Nouelig', '12 rue de la Soif', '0601020304'),
+(2, 'Galand', 'Benedig', '5 avenue du Houblon', '0611223344'),
+(3, 'Kerbellec', 'Nolwennig', '45 boulevard du cidre', '0788990011'),
+(4, 'Broudic', 'Gaidig', '8 impasse du doliprane', '0655443322'),
+(5, 'Queffelec', 'Gwennaig', '22 rue Michao', '0969394020'),
+(6, 'Quenoualut', 'Rozenn', '1 Allée de la gallette', '117217'),
+(7, 'Kermarrec', 'Kadec', '10 route à 3 gramme', '3630');
 
 INSERT INTO Brasserie VALUES
-(1, 'Brasserie du Mont Blanc', 'Chambéry', 1),
-(2, 'Brasserie de la Paix', 'Lille', 2),
-(3, 'Micro-brasserie du Geek', 'Grenoble', 3),
-(4, 'Brewery StackOverflow', 'Dublin', 6);
+(1, 'Brasserie du paumau', 'Painpol', 1),
+(2, 'Brasserie celique', 'Ploubazlanec', 2),
+(3, 'cuvée Saint-Michel', 'Quibron', 3),
+(4, 'La cave de Nolwenn', 'Lorien', 6);
 
 INSERT INTO Bar VALUES
-(1, 'Le Terminal', 'Place de la Gare, Grenoble', 3),
-(2, 'L''After Work', 'Quartier d''affaires, Lyon', 4),
-(3, 'La Chope', 'Centre ville, Lille', 2),
-(4, 'Le Null Pointer', 'Rue des Débuggers, Paris', 6);
+(1, 'Le Tri yann', 'Place de la Pluie', 3),
+(2, 'Le Bon Normand', 'Quartier du drapeau', 4),
+(3, 'La Chope', 'Centre ville', 2),
+(4, 'La maison Loïc', 'Rue des moulles frites', 6);
 
 INSERT INTO Biere VALUES
-(1, 'La Binaire', 5.0, 3),
-(2, 'La 404 Not Found', 8.5, 3),
-(3, 'Blanche des Cimes', 4.2, 1),
-(4, 'L''Ambrée du Nord', 6.0, 2),
-(5, 'La Kernel Panic', 12.0, 3),
-(6, 'SQL Injection Stout', 9.0, 4),
-(7, 'Git Push Pale Ale', 5.5, 4);
+(1, 'La Kenavo', 5.0, 3),
+(2, 'Blanche et noire', 8.5, 3),
+(3, 'Blanche d''Ouessant', 4.2, 1),
+(4, 'La ciré jaune', 6.0, 2),
+(5, 'La Bigoudaine', 12.0, 3),
+(6, 'La blonde de Nantes', 9.0, 4),
+(7, 'La Bro Gozh Ma Zadoù', 5.5, 4);
 
 INSERT INTO vend VALUES
 (1, 1, 5.50), (1, 2, 7.00), (1, 5, 8.50),

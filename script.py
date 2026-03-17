@@ -59,7 +59,7 @@ def select_menteurs (conn):
 
 def select_patron_sobre (conn):
     cur = conn.cursor()
-    query = "Select Personne.nomB, prenomB from Personne join Bar on patron =Personne.id EXCEPT Select nomB, prenomB from Personne join Avis on personne= Personne.id"
+    query = "Select Personne.nomB, prenomB from Personne join Bar on patron =Personne.id EXCEPT Select nomB, prenomB from Personne join Bois on client= Personne.id"
     cur.execute(query)
     rows = cur.fetchall()
     
